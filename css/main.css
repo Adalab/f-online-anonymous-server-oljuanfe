@@ -80,7 +80,12 @@ button {
   align-items: center;
 }
 
+.page__main .page__wrapper {
+  justify-content: flex-start;
+}
+
 .page__main-title {
+  width: 327px;
   position: relative;
   transform: translateY(50%);
   font-family: 'Roboto Slab';
@@ -125,8 +130,9 @@ button {
     justify-content: center;
   }
 
-  .page__main {
-    
+  .page__main-title {
+    width: 595px;
+    font-size: 55px;
   }
 
   .page__footer {
@@ -139,5 +145,12 @@ button {
     /* margin-left: 60px;
     margin-right: 60px;
     max-width: 990px; */
+  }
+}
+
+@media all and (min-width:1440px) {
+  .page__main-title {
+    width: 990px;
+    font-size: 125px;
   }
 }
