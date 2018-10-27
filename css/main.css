@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/anonymous-server-background.jpg'), linear-gradient(-180deg, #00000000 0%, #00000059 50%);;
+  background-image: url('../images/anonymous-server-background.jpg'), linear-gradient(-180deg, #00000000 0%, #00000059 50%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,9 +29,7 @@ body {
 
 /* HEADER */
 .page__header {
-  position: absolute;
-  right: 0;
-  top: 0;
+  
 }
 
 .nav-trigger {}
@@ -40,6 +38,18 @@ body {
 
 
 /* MENU */
+button {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #000000;
+  opacity: 0.75;
+  border-radius: 5px;
+
+}
+
 .nav {
   display: none;
 }
