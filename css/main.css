@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/anonymous-server-background.jpg'), linear-gradient(-180deg, #00000000 0%, #00000059 50%);
+  background: linear-gradient(-180deg, #00000000 0%, #00000059 50%), url('../images/anonymous-server-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
