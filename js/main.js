@@ -11,12 +11,11 @@ buttonCloseMenu.innerHTML = '';
 
 navigationMenu.classList.add('hidden');
 
-console.log(buttonOpenMenu.style);
 buttonOpenMenu.style.backgroundImage = "url('../images/ico-menu.svg')";
 buttonCloseMenu.style.backgroundImage = "url('../images/ico-close.svg')";
 
 
-
+// Handle clicks
 function handleOpenMenu() {
   console.log('clickando');
   navigationMenu.classList.toggle('hidden');
@@ -27,5 +26,6 @@ function handleCloseMenu() {
   navigationMenu.classList.toggle('hidden');
 }
 
+// Listeners
 buttonOpenMenu.addEventListener('click', handleOpenMenu);
 buttonCloseMenu.addEventListener('click', handleCloseMenu);
