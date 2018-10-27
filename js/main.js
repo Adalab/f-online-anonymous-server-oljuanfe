@@ -10,6 +10,7 @@ buttonOpenMenu.innerHTML = '';
 buttonCloseMenu.innerHTML = '';
 
 navigationMenu.classList.add('hidden');
+buttonCloseMenu.classList.add('hidden');
 
 buttonOpenMenu.style.backgroundImage = "url('../images/ico-menu.svg')";
 buttonCloseMenu.style.backgroundImage = "url('../images/ico-close.svg')";
@@ -18,12 +19,22 @@ buttonCloseMenu.style.backgroundImage = "url('../images/ico-close.svg')";
 // Handle clicks
 function handleOpenMenu() {
   console.log('clickando');
-  navigationMenu.classList.toggle('hidden');
+  navigationMenu.classList.remove('hidden');
+  navigationMenu.classList.add('nav-animation__intro');
+  navigationMenu.classList.remove('nav-animation__closing');
+  buttonCloseMenu.classList.toggle('hidden');
+  buttonOpenMenu.classList.toggle('hidden');
 }
 
 function handleCloseMenu() {
   console.log('estoy clickando');
-  navigationMenu.classList.toggle('hidden');
+  navigationMenu.classList.add('nav-animation__closing');
+  navigationMenu.classList.remove('nav-animation__intro');
+  setTimeout(function addHidden() {
+    navigationMenu.classList.add('hidden')
+  },1000);
+  buttonOpenMenu.classList.toggle('hidden');
+  buttonCloseMenu.classList.toggle('hidden');
 }
 
 // Listeners

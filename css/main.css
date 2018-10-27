@@ -51,8 +51,9 @@ button {
   
 }
 
-.nav-trigger:hover {
-  transform: rotate(180deg);
+button:hover {
+  transform: rotate(180deg) scale(1.1);
+  
 }
 
 .nav {
@@ -67,6 +68,35 @@ button {
   background-color: #402929;
   opacity: 0.92;
   z-index: 10;
+  transition: all 1s;
+}
+
+.nav-animation__intro {
+animation-name: intro;
+animation-duration: 1s;
+}
+
+.nav-animation__closing {
+  animation-name: closing;
+  animation-duration: 1s;
+}
+
+@keyframes intro {
+  from {
+    transform:translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes closing {
+  from {
+    transform:translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .nav__items {
@@ -83,6 +113,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: all 1s;
+}
+
+.nav__item:hover {
+  transform: scale(1.5);
 }
 
 /* MAIN */
