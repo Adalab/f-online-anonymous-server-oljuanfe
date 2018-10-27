@@ -8,6 +8,14 @@
   border: 1px solid purple;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -17,7 +25,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: linear-gradient(-180deg, #00000000 0%, #00000059 50%), url('../images/anonymous-server-background.jpg');
   background-size: cover;
   background-position: center;
@@ -48,15 +55,35 @@ button {
   opacity: 0.75;
   border: none;
   border-radius: 5px;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .nav {
-  display: none;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Slab';
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #402929;
+  opacity: 0.92;
+  z-index: 10;
 }
 
-.nav__items {}
-.nav__item {}
+.nav__items {
+  text-align: center;
+}
+.nav__item {
+  max-width: 287px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
 .nav__link {}
 .nav-close {}
 
@@ -85,7 +112,7 @@ button {
 }
 
 .page__main-title {
-  width: 327px;
+  max-width: 327px;
   position: relative;
   transform: translateY(50%);
   font-family: 'Roboto Slab';
@@ -93,7 +120,9 @@ button {
   text-transform: uppercase;
 }
 
-
+.hidden {
+  display: none;
+}
 
 
 /* FOOTER */
