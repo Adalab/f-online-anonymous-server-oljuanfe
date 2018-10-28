@@ -9,6 +9,9 @@ const buttonCloseMenu = document.querySelector('.nav-close');
 buttonOpenMenu.innerHTML = '';
 buttonCloseMenu.innerHTML = '';
 
+buttonOpenMenu.style.backgroundImage = "url('../images/ico-menu.svg')";
+buttonCloseMenu.style.backgroundImage = "url('../images/ico-close.svg')";
+
 navigationMenu.classList.add('hidden');
 buttonCloseMenu.classList.add('hidden');
 
