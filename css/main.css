@@ -48,12 +48,18 @@ button {
   background-repeat: no-repeat;
   cursor: pointer;
   transition: all 3s;
-  
 }
 
 button:hover {
   transform: rotate(180deg) scale(1.1);
-  
+}
+
+.nav-trigger {
+  background-image: url('../images/ico-menu.svg');
+}
+
+.nav-close {
+  background-image: url('../images/ico-close.svg');
 }
 
 .nav {
